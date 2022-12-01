@@ -11,6 +11,7 @@
   --header-border-color: #ececec;
   --projects-border-color: #eeeeee;
   --bg-hero-gradient: rgba(47, 48, 58, 0.4);
+  --border-clients-color: #afb1b8;
 }
 
 body {
@@ -451,11 +452,44 @@ p {
   color: var(--primary-white-color);
 }
 
-.social > .item {
-  /* flex-basis: calc((100% - 3 * 10px) / 4); */
-}
+/* .social > .item {
+  flex-basis: calc((100% - 3 * 10px) / 4); 
+} */
 
 .social .icon {
+  fill: currentColor;
+}
+
+/* Regular clients */
+
+.clients {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.clients > .item {
+  flex-basis: calc((100% - 5 * 30px) / 6);
+}
+
+.clients .link {
+  padding: 16px 32px;
+
+  display: block;
+
+  color: var(--border-clients-color);
+
+  border: 1px solid var(--border-clients-color);
+  border-radius: 4px;
+}
+
+.clients .link:hover {
+  color: var(--accent-color);
+
+  border: 1px solid var(--accent-color);
+}
+
+.clients .icon {
   fill: currentColor;
 }
 
