@@ -423,7 +423,40 @@ p {
 
 .item > .team-caption {
   margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.social {
   margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.social .link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  display: flex;
+
+  color: inherit;
+
+  border-radius: 50%;
+}
+
+.social .link:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.social > .item {
+  /* flex-basis: calc((100% - 3 * 10px) / 4); */
+}
+
+.social .icon {
+  fill: currentColor;
 }
 
 /* Portfolio */
