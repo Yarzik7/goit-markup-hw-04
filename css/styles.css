@@ -333,15 +333,32 @@ p {
 
 .features {
   display: flex;
+  column-gap: 30px;
 }
 
 .features > .item {
-  width: 270px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
-.features > .item:not(:last-child) {
-  margin-right: 30px;
+.features .icon-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 30px;
+
+  background-color: var(--bg-buttons-color);
+  border-radius: 4px;
 }
+
+.features .icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* .features > .item:not(:last-child) {
+  margin-right: 30px;
+} */
 
 .features-title {
   font-size: 14px;
