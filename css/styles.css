@@ -10,6 +10,7 @@
   --bg-buttons-color: #f5f4fa;
   --header-border-color: #ececec;
   --projects-border-color: #eeeeee;
+  --bg-hero-gradient: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -290,6 +291,18 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(var(--bg-hero-gradient), var(--bg-hero-gradient)),
+    url(../images/background-hero.jpg);
+  background-size: contain;
+  border: 1px solid #000000;
 }
 
 /* Section */
