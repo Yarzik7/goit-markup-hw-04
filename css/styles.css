@@ -12,6 +12,7 @@
   --projects-border-color: #eeeeee;
   --bg-hero-gradient: rgba(47, 48, 58, 0.4);
   --border-clients-color: #afb1b8;
+  --bg-social-footer: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -62,6 +63,41 @@ p {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+/* Social links */
+
+.social {
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.social .link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  display: flex;
+
+  color: inherit;
+
+  border-radius: 50%;
+}
+
+.social .link:hover,
+.social .link:focus {
+  background-color: var(--accent-color);
+}
+
+.social .icon {
+  fill: currentColor;
+}
+
+/* .social > .item {
+  flex-basis: calc((100% - 3 * 10px) / 4); 
+} */
 
 /* Container */
 
@@ -195,6 +231,35 @@ p {
   padding-bottom: 60px;
 
   background-color: var(--bg-footer-color);
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.join-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.footer-social .link {
+  color: var(--primary-white-color);
+
+  background-color: var(--bg-social-footer);
+}
+
+.footer-social .link:hover,
+.footer-social .link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social .icon {
+  fill: var(--primary-white-color);
 }
 
 .footer-contacts > .item:not(:last-child) {
@@ -427,37 +492,13 @@ p {
   margin-bottom: 16px;
 }
 
-.social {
-  margin-bottom: 30px;
-
-  display: flex;
-  justify-content: center;
-  column-gap: 10px;
-}
-
-.social .link {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-
-  display: flex;
-
+.team .link {
   color: inherit;
-
-  border-radius: 50%;
 }
 
-.social .link:hover {
-  background-color: var(--accent-color);
+.team .link:hover,
+.team .link:focus {
   color: var(--primary-white-color);
-}
-
-/* .social > .item {
-  flex-basis: calc((100% - 3 * 10px) / 4); 
-} */
-
-.social .icon {
-  fill: currentColor;
 }
 
 /* Regular clients */
@@ -483,7 +524,8 @@ p {
   border-radius: 4px;
 }
 
-.clients .link:hover {
+.clients .link:hover,
+.clients .link:focus {
   color: var(--accent-color);
 
   border: 1px solid var(--accent-color);
