@@ -79,8 +79,6 @@ p {
 
   display: block;
 
-  color: inherit;
-
   border-radius: 50%;
 }
 
@@ -504,7 +502,7 @@ p {
 }
 
 .team .link {
-  color: inherit;
+  color: var(--border-clients-color);
 }
 
 .team .link:hover,
