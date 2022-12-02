@@ -384,7 +384,7 @@ p {
     url(../images/background-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid #000000;
+  border: 1px solid var(--header-logo-color);
 }
 
 /* Section */
